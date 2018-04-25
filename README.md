@@ -26,7 +26,7 @@ In order to run on server side, you need to follow the steps below:
 	RUN `curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py`
 	RUN `python get-pip.py`
 2. pandas: RUN `pip install pandas`
-3. geojson: RUN `geojson`
+3. geojson: RUN `pip install geojson`
 
 ## How to Build on Local System
 
@@ -43,8 +43,8 @@ Create Node Module:
 
 ## How to use FrontEnd on your browser (Chrome & FireFox tested)
 1. Open browser and load `localhost:8080`
-2. Click Choose File and load any csv from "./csv"
+2. Click Choose File and load any csv from "./csv's for input" directory.
 
-Result: In return that csv file will be download in "./" directory and a geoJson will be created in "./json" directory, which will be loaded on Client side and a new row will be created in the table, with a clickable name field to find the location of that particular vessel on the Map.
+Result: In return that csv file will be download in "./csv" directory and a geoJson will be created in "./json" directory, which will be loaded on Client side and a new row will be created in the table, with a clickable name field to find the location of that particular vessel on the Map.
 
 
