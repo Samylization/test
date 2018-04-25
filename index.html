@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>File Uploader - coligo.io</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+<body>
+<div style="width: auto;"> 
+    <div style="width: 50%; float: left;">
+        <div class="main-container"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="alert alert-success" id="success-alert">
+                                <button type="button" class="close" data-dismiss="alert">x</button>
+                                <strong>Success! </strong>
+                                Table is successfuly updated.
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                            <h2>File Uploader</h2>
+                                <form id ="check" action="/" name="myForm" method="post" enctype="multipart/form-data"> 
+                                    <input type="file" id="filetoupload" name="filetoupload"><br>
+                                    <input class ="btn btn-lg upload-btn" type="submit" value="Submit" >
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="tablediv">
+                <table id="myTable">
+                    <tr>
+                            <th>ID</th>
+                            <th>Vessel Name</th>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+    </div>
+    <div style="width: 50%; float: right; margin-top:2%; " >
+         <h2>Map</h2>
+         <div id="map" style="width:85%;height:400px">
+            
+        </div>
+    </div>
+
+</div>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqAJam-GugXBJXh2rEU5wjisQ4OmsMvYA
+        &callback=myMap"
+        type="text/javascript"></script>
+        <script src="./upload.js"></script>
+        </body>
+
+</html>
